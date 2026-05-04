@@ -1,0 +1,12 @@
+.DS_Store
+.ipynb_checkpoints/
+__pycache__/
+notebooks/spotify_charts_full_analysis 2.ipynb
+
+.venv/
+processed/
+raw/
+
+*.parquet
+*.csv
+*.csv.gz
