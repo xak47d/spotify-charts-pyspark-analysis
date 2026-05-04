@@ -57,13 +57,22 @@ export PATH="$JAVA_HOME/bin:$PATH"
 
 ## Datos
 
-Los archivos fuente no se incluyen en el repositorio.
+Los archivos fuente no se incluyen directamente dentro del historial git del repositorio porque GitHub normal no maneja bien archivos tan grandes.
 
 Dataset de referencia:
 
 - [Spotify Charts Daily Updated on Kaggle](https://www.kaggle.com/datasets/gonzalopezgil/spotify-charts-daily-updated)
 
-Coloca los archivos requeridos dentro de `raw/` antes de ejecutar el notebook.
+Datasets usados en este proyecto:
+
+- [Release assets: data-assets-v1](https://github.com/xak47d/spotify-charts-pyspark-analysis/releases/tag/data-assets-v1)
+
+Ese release contiene:
+
+- `charts_artists_daily.csv.gz`
+- `charts_albums_weekly.csv.gz`
+
+Descarga y descomprime esos archivos dentro de `raw/` antes de ejecutar el notebook.
 
 ## Ejecucion
 
