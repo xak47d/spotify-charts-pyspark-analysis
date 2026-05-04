@@ -4,8 +4,6 @@ Analisis exploratorio e interpretativo de charts de Spotify usando PySpark, con 
 
 ## Alcance
 
-Este proyecto excluye `charts_songs_daily.csv` del flujo principal porque su tamaño supera los 10 GB y no es conveniente para esta version local del analisis.
-
 El notebook principal trabaja con:
 
 - `charts_artists_daily.csv`
