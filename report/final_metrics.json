@@ -1,0 +1,81 @@
+{
+  "dataset": {
+    "original_records": 22711258,
+    "date_min": "2021-10-21",
+    "date_max": "2026-05-02",
+    "filtered_records": 17914239,
+    "excluded_country": "VE",
+    "evaluation_start": "2022-10-21"
+  },
+  "sample": {
+    "target": 200000,
+    "actual": 200033,
+    "clean": 200033,
+    "strata": 8,
+    "max_population_sample_difference_pct": 0.18642946200952415
+  },
+  "folds": {
+    "count": 5,
+    "minimum_size": 40004,
+    "maximum_size": 40010
+  },
+  "random_forest": {
+    "selected_numTrees": 100,
+    "selected_maxDepth": 8,
+    "best_fold": 3,
+    "best_fold_selection_rule": "AUC-ROC descending, weighted F1 descending as tie-breaker",
+    "metrics_mean": {
+      "accuracy": 0.7385481964800166,
+      "f1_weighted": 0.7506081589026484,
+      "precision_weighted": 0.7772269506634156,
+      "recall_weighted": 0.7385481964800165,
+      "auc_roc": 0.7880929676855818
+    },
+    "metrics_std": {
+      "accuracy": 0.004353583084427793,
+      "f1_weighted": 0.0037588309600266965,
+      "precision_weighted": 0.0019137948964560337,
+      "recall_weighted": 0.0043535830844278,
+      "auc_roc": 0.002402963443555104
+    },
+    "baseline_mean": {
+      "accuracy": 0.7447971089394729,
+      "f1_weighted": 0.6358592992969287,
+      "precision_weighted": 0.5547227336921703,
+      "recall_weighted": 0.7447971089394729,
+      "auc_roc": 0.5
+    },
+    "model_minus_baseline": {
+      "accuracy": -0.006248912459456357,
+      "f1_weighted": 0.11474885960571968,
+      "precision_weighted": 0.22250421697124534,
+      "recall_weighted": -0.006248912459456468,
+      "auc_roc": 0.2880929676855818
+    },
+    "per_class": {
+      "Estable": {
+        "support": 148984,
+        "precision": 0.8752047065032637,
+        "recall": 0.7568866455458304,
+        "f1": 0.8117569566672785
+      },
+      "Top": {
+        "support": 51049,
+        "precision": 0.491220677061385,
+        "recall": 0.6850281102470176,
+        "f1": 0.5721578219717112
+      }
+    }
+  },
+  "kmeans": {
+    "best_k": 2,
+    "silhouette": 0.4945039791169502,
+    "inertia": 541334.1739159785
+  },
+  "integrity": {
+    "all_eight_strata": true,
+    "five_balanced_folds": true,
+    "unique_ids": true,
+    "rank_excluded_from_supervised_features": true
+  }
+}
